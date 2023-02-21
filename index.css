@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,300&display=swap');
+
+*{
+    margin: 5px;
+    padding: 1px;
+}
+
+body {
+    height: 720px;
+    width: 1280px;
+    border-radius: 0px;
+}
+/* Style Navbar */
+
+#navbar{
+    display: flex;
+}
+
+.navbar{
+    margin: auto;
+    text-align: right;
+    width: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.navbar img{
+    float: left;
+    width: 50px;
+    height: 50px;
+}
+
+.navbar ul{
+    background: transparent;
+    padding: 0 20px;
+    list-style: none;
+    position: relative;
+    display: inline-table;
+    width: 500px;
+}
+
+.navbar ul li{
+    float: left;
+}
+
+.navbar ul li:hover{
+    border: 1px solid black;
+    border-radius: 15px;
+    -webkit-animation: split-pop-br 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: split-pop-br 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.navbar ul li:hover a{
+    color: rgb(22, 0, 148);
+}
+
+.navbar ul li a{
+    display: block;
+    padding: 5px;
+    color: #000000;
+    text-decoration: none;
+}
+
+/* End */
+
+/* Style Our Headquarter */
+
+#content{
+    display: flexbox;
+}
+
+.content-main{
+    margin: 0px;
+    display: flex;
+    float: left;
+}
+
+.gallery{
+    margin: 50px;
+    display: flexbox;
+}
+
+.gallery img{
+    border-radius: 100%;
+    border: 10px solid transparent;
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+
+.desc{
+    margin-top: 250px;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.gallery:hover{
+    border: 5px solid black;
+    border-radius: 10%;
+    -webkit-animation: shadow-pop-br 0.2s linear both;
+	        animation: shadow-pop-br 0.2s linear both;
+}
+
+/* End */
+
+/* keyframe untuk hover */
+@-webkit-keyframes shadow-pop-br {
+    0% {
+        -webkit-box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+            box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+        -webkit-transform: translateX(0) translateY(0);
+            transform: translateX(0) translateY(0);
+    }
+    100% {
+        -webkit-box-shadow: 0px 0px #3e3e3e, 1px 1px #3e3e3e, 2px 2px #3e3e3e, 3px 3px #3e3e3e, 4px 4px #3e3e3e, 5px 5px #3e3e3e, 6px 6px #3e3e3e, 7px 7px #3e3e3e;
+            box-shadow: 0px 0px #3e3e3e, 1px 1px #3e3e3e, 2px 2px #3e3e3e, 3px 3px #3e3e3e, 4px 4px #3e3e3e, 5px 5px #3e3e3e, 6px 6px #3e3e3e, 7px 7px #3e3e3e;
+        -webkit-transform: translateX(-8px) translateY(-8px);
+            transform: translateX(-8px) translateY(-8px);
+    }
+}
+@keyframes shadow-pop-br {
+    0% {
+        -webkit-box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+            box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+        -webkit-transform: translateX(0) translateY(0);
+            transform: translateX(0) translateY(0);
+    }
+    100% {
+        -webkit-box-shadow: 0px 0px #3e3e3e, 1px 1px #3e3e3e, 2px 2px #3e3e3e, 3px 3px #3e3e3e, 4px 4px #3e3e3e, 5px 5px #3e3e3e, 6px 6px #3e3e3e, 7px 7px #3e3e3e;
+            box-shadow: 0px 0px #3e3e3e, 1px 1px #3e3e3e, 2px 2px #3e3e3e, 3px 3px #3e3e3e, 4px 4px #3e3e3e, 5px 5px #3e3e3e, 6px 6px #3e3e3e, 7px 7px #3e3e3e;
+        -webkit-transform: translateX(-8px) translateY(-8px);
+            transform: translateX(-8px) translateY(-8px);
+    }
+}
+
+@-webkit-keyframes split-pop-br{
+    0%
+    {
+        -webkit-transform: translateY(0);
+            transform: translateY(0);
+    }
+    100%
+    {
+        -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+    }
+}
+
+@keyframes split-pop-br {
+    0%
+    {
+        -webkit-transform: translateY(0);
+            transform: translateY(0);
+    }
+
+    100%
+    {
+        -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+    }
+}
+/* end */
