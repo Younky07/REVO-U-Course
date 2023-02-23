@@ -1,0 +1,38 @@
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+label {
+	margin-bottom: 5px;
+}
+
+input {
+	margin-bottom: 10px;
+	padding: 5px;
+	border-radius: 5px;
+	border: 1px solid gray;
+}
+
+button {
+	margin-top: 10px;
+	padding: 5px 10px;
+	border-radius: 5px;
+	border: none;
+	background-color: lightblue;
+	color: white;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+#input-results {
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+#input-results p {
+	margin-bottom: 10px;
+}

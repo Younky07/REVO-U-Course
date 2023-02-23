@@ -10,31 +10,22 @@
 </head>
 <body>
     <section id="navbar">
-        <div class="navbar">
-            <img src="https://assets.website-files.com/61af164800e38c4f53c60b4e/61af164800e38c11efc60b6d_RevoU.svg" alt="">
+        <img src="https://assets.website-files.com/61af164800e38c4f53c60b4e/61af164800e38c11efc60b6d_RevoU.svg" alt="">
+        <nav class="navbar">
             <ul>
-                <li>
-                    <a href="#">Home</a>
-                </li>
-                <li>
-                    <a href="#">Our Profile</a>
-                </li>
-                <li>
-                    <a href="#">Portofolio</a>
-                </li>
-                <li>
-                    <a href="#">Massege Us</a>
-                </li>
-                <li></li>
-            </ul>
-        </div>
+				<li><a href="tester.html">Home</a></li>
+				<li><a href="profil.html">Our Profile</a></li>
+				<li><a href="portfolio website/index.html">Portofolio</a></li>
+				<li><a href="#footer">Massage Us</a></li>
+			</ul>
+        </nav>
     </section>
 
-    <hr width="100%" color="black">
+    <hr color="black">
     
     <section id="landing-page">
         <div class="content-head">
-            <h1>Hi Joko, welcome To Website</h1>
+            <h1>Hi Joko, Welcome To Website</h1>
             <h2>Ini merupakan website latihan</h2>
         </div>
         <div class="img-content">
@@ -42,7 +33,7 @@
         </div>
     </section>
     
-    <hr width="100%" color="black">
+    <hr color="black">
 
     <section id="content">
         <h1>Our Headquarter</h1>
@@ -50,32 +41,75 @@
             <div class="gallery">
                 <a target="#" href="asset/img/monas.jpg">
                     <img src="asset/img/monas.jpg" alt="Monumen Nasional Jakarta" >
+                    <h1>JAKARTA</h1>
                 </a>
-                <div class="desc">JAKARTA</div>
             </div>
 
             <div class="gallery">
                 <a target="#" href="asset/img/monas.jpg">
                     <img src="asset/img/bandung.jpg" alt="Monumen Bandung" >
+                    <h1>BANDUNG</h1>
                 </a>
-                <div class="desc">BANDUNG</div>
             </div>
 
             <div class="gallery">
                 <a target="#" href="asset/img/monas.jpg">
                     <img src="asset/img/surabaya.jpg" alt="Monumen Surabaya" >
+                    <h1 class="desc">SURABAYA</h1>
                 </a>
-                <div class="desc">SURABAYA</div>
             </div>
         </div>
     </section>
 
-    <hr width="100%" color="black">
+    <hr color="black">
+    
+    <section id="contact">
+    <div class="message-us">
+        <form class="form-input">
+            <h1>Message Us</h1>
+            <div class="form">
+                <label for="nama">Nama:</label>
+			    <input type="text" id="nama" name="nama">
+            </div>
+
+            <div class="form">
+                <label for="gender">Jenis Kelamin:</label>
+			    <select id="gender" name="gender">
+				    <option value="Laki - Laki">Laki - Laki</option>
+				    <option value="Perempuan">Perempuan</option>
+			    </select>
+            </div>
+
+            <div class="form">
+                <label for="tanggal-lahir">Tanggal Lahir:</label>
+			    <input type="date" id="tanggal-lahir" name="tanggal-lahir">
+            </div>
+
+            <div class="form-pesan">
+                <label for="pesan">Pesan:</label>
+                <input type="text" id="pesan" name="nama">
+            </div>
+
+			<button href=""type="submit">Submit</button>
+		</form>
+        <div class="result">
+            <div class="current-time">
+                <b>Current Time:</b>
+		        <p id="current-datetime"></p>
+		        <p id="gmt-offset"></p>
+            </div>
+
+		    <ul id="list-data"></ul>
+        </div>
+    </div>
+    </section>
     
     <section id="footer">
-        <div class="footer">
-            <h1>Massage Us</h1>
-        </div>
+        <footer class="footer-main">
+            <h1>Create by Yosa</h1>
+        </footer>
     </section>
+
+    <script src="index.js"></script>
 </body>
 </html>
