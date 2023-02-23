@@ -160,15 +160,15 @@ body {
     justify-content: space-between;
 }
 
-.form input{
-    width: 300px;
-    padding: 10px;
-}
-
 .form-input h1{
     margin-bottom: 30px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
+}
+
+.form input{
+    width: 300px;
+    padding: 10px;
 }
 
 .form label{
@@ -176,6 +176,28 @@ body {
 	margin-top: 15px;
     margin-bottom: 5px;
     
+}
+
+.form input, textarea{
+    border: 2px solid rgb(74, 139, 199);
+    border-radius: 15px;
+}
+
+.form-gender select{
+    padding: 10px;
+}
+
+.form-gender label{
+    display: block;
+	margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.form-gender select, textarea{
+    border: 2px solid rgb(74, 139, 199);
+    border-radius: 15px;
+    background-color: rgb(74, 139, 199);
+    color: #000000;
 }
 
 .form-date{
@@ -191,6 +213,13 @@ body {
     padding: 5px;
 }
 
+.form-date input, textarea{
+    border: 2px solid rgb(74, 139, 199);
+    border-radius: 15px;
+    background-color: rgb(74, 139, 199);
+    color: #000000;
+}
+
 .form-pesan label{
     display: block;
 }
@@ -199,6 +228,8 @@ body {
     height: 100px;
     width: 300px;
     padding: 10px;
+    border: 2px solid rgb(74, 139, 199);
+    border-radius: 15px;
 }
 
 .result{
@@ -262,6 +293,7 @@ button:hover{
     margin: 2%;
     border: 2px solid rgb(74, 139, 199);
     padding: 15px;
+    color: rgb(74, 139, 199);
 }
 
 .footer-main{

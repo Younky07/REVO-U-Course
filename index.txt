@@ -73,7 +73,7 @@
 			    <input type="text" id="nama" name="nama" placeholder="Masukan Nama Anda">
             </div>
 
-            <div class="form-gender">
+            <div class="form">
                 <label for="gender">Jenis Kelamin:</label>
 			    <select id="gender" name="gender">
 				    <option value="Laki - Laki">Laki - Laki</option>

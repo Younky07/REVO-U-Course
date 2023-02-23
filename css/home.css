@@ -1,0 +1,79 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    -webkit-animation: color-change-5x 8s linear infinite alternate both;
+	        animation: color-change-5x 8s linear infinite alternate both;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px 0;
+}
+
+form {
+    display: inline-block;
+}
+
+label, input, button {
+    font-size: 1.2em;
+    margin: 10px;
+}
+
+button {
+    background-color: #fce300;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button a{
+    text-decoration: none;
+    color: #000000;
+}
+
+#greeting {
+    font-size: 2em;
+    margin-top: 50px;
+}
+
+
+/* keyframe RGB Background */
+
+@-webkit-keyframes color-change-5x {
+    0% {
+        background: #0059df;
+    }
+    25% {
+        background: #b22cff;
+    }
+    50% {
+        background: #229aea;
+    }
+    75% {
+        background: #ee58f3;
+    }
+    100% {
+        background: #79ced1;
+    }
+}
+@keyframes color-change-5x {
+    0% {
+        background: #0059df;
+    }
+    25% {
+        background: #b22cff;
+    }
+    50% {
+        background: #229aea;
+    }
+    75% {
+        background: #ee58f3;
+    }
+    100% {
+        background: #79ced1;
+    }
+}
