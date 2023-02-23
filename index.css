@@ -10,8 +10,10 @@ hr{
 }
 
 body {
+    width: 1280;
     border-radius: 0px;
     margin-bottom: 5px;
+    background-color: rgb(0, 0, 0);
 }
 /* Style Navbar */
 
@@ -20,15 +22,18 @@ body {
 	justify-content: space-between;
 	align-items: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    border: 1px solid black;
+    border: 10px solid rgb(59, 59, 59);
+    border-radius: 10px;
     margin: 2%;
     padding: 10px;
+    background-color: rgb(74, 139, 199);
 }
 
 #navbar img{
     float: left;
     width: 50px;
     height: 50px;
+    
 }
 
 .navbar ul{
@@ -49,7 +54,7 @@ body {
 }
 
 .navbar ul li:hover a{
-    color: rgb(22, 0, 148);
+    color: rgb(255, 251, 0);
 }
 
 .navbar ul li a{
@@ -72,6 +77,7 @@ body {
     margin-bottom: 30px;
     font-family: Roboto, arial,sans-serif;
     font-size: 20px;
+    color: rgb(74, 139, 199);
 }
 
 .content-head h2{
@@ -94,13 +100,17 @@ body {
     display: flex;
     flex-direction: column;
     margin: 2%;
+    color: rgb(74, 139, 199);
+    font-size: 25px;
 }
 
 .content-main{
     margin: 0px;
     display: flex;
     float: left;
-    overflow: scroll;
+    border-radius: 15px;
+    -webkit-animation: color-change-5x 8s linear infinite alternate both;
+	        animation: color-change-5x 8s linear infinite alternate both;
 }
 
 .gallery{
@@ -132,8 +142,8 @@ body {
 .gallery:hover{
     border: 5px solid black;
     border-radius: 10%;
-    -webkit-animation: shadow-pop-br 0.2s linear both;
-	        animation: shadow-pop-br 0.2s linear both;
+    -webkit-animation: color-change-5x 8s linear infinite alternate both;
+	        animation: color-change-5x 8s linear infinite alternate both;
 }
 
 /* End */
@@ -142,11 +152,17 @@ body {
 
 #contact{
     margin: 2%;
+    color: rgb(74, 139, 199);
 }
 
 .message-us{
     display: flex;
     justify-content: space-between;
+}
+
+.form input{
+    width: 300px;
+    padding: 10px;
 }
 
 .form-input h1{
@@ -155,19 +171,41 @@ body {
     font-size: 20px;
 }
 
-.form{
+.form label{
     display: block;
-	margin-bottom: 10px;
+	margin-top: 15px;
+    margin-bottom: 5px;
+    
+}
+
+.form-date{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.form-date label{
+    display: block;
+}
+
+.form-date input{
+    padding: 5px;
+}
+
+.form-pesan label{
+    display: block;
 }
 
 .form-pesan input, textarea{
-    padding: 50px;
+    height: 100px;
+    width: 300px;
+    padding: 10px;
 }
 
 .result{
     display: flex;
     flex-direction: column;
-    border: 2px solid black;
+    border: 2px solid rgb(74, 139, 199);
+    border-radius: 15px;
     width: 50%;
 }
 
@@ -204,6 +242,17 @@ body {
     margin-bottom: 15px;
 }
 
+button{
+    margin-top: 25px;
+    width: 100%;
+    height: 35px;
+    font-size: 20px;
+    font-family: poppins, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+button:hover{
+    color: rgb(74, 139, 199);
+}
 
 /* End */
 
@@ -211,7 +260,7 @@ body {
 
 #footer{
     margin: 2%;
-    border: 2px solid black;
+    border: 2px solid rgb(74, 139, 199);
     padding: 15px;
 }
 
@@ -222,12 +271,13 @@ body {
 
 /* End */
 
-/* keyframe untuk hover */
+/* keyframe dan media querry */
 
-/* Media Querry Mobile */
-@media screen and (max-width: 720px) {
+/* Media Querry */
+
+@media screen and (max-width: 640px) {
     body{
-        width: 280px;
+        width: 680px;
     }
 
 	#navbar {
@@ -251,7 +301,13 @@ body {
     .content-main{
         flex-direction: column;
         align-items: center;
+        overflow: scroll;
     }
+
+    #footer {
+        flex-direction: column;
+		text-align: center;
+	}
 }
 
 @-webkit-keyframes shadow-pop-br {
@@ -307,6 +363,41 @@ body {
     {
         -webkit-transform: translateY(-10px);
             transform: translateY(-10px);
+    }
+}
+
+@-webkit-keyframes color-change-5x {
+    0% {
+        background: #0059df;
+    }
+    25% {
+        background: #b22cff;
+    }
+    50% {
+        background: #229aea;
+    }
+    75% {
+        background: #ee58f3;
+    }
+    100% {
+        background: #79ced1;
+    }
+}
+@keyframes color-change-5x {
+    0% {
+        background: #0059df;
+    }
+    25% {
+        background: #b22cff;
+    }
+    50% {
+        background: #229aea;
+    }
+    75% {
+        background: #ee58f3;
+    }
+    100% {
+        background: #79ced1;
     }
 }
 /* end */

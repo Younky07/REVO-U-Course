@@ -1,31 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Form Input Data</title>
-	<link rel="stylesheet" href="tester.css">
+	<title>Contact Us</title>
+	<link rel="stylesheet" type="text/css" href="tester.css">
 </head>
 <body>
 	<header>
-		<h1>Vertical Input</h1>
+		<h1>Contact Us</h1>
 	</header>
 
-	<main>
+	<section class="contact-form">
 		<form>
 			<label for="name">Name:</label>
-			<input type="text" id="name" name="name">
+			<input type="text" id="name" name="name" required>
 
 			<label for="email">Email:</label>
-			<input type="email" id="email" name="email">
+			<input type="email" id="email" name="email" required>
 
-			<label for="password">Password:</label>
-			<input type="password" id="password" name="password">
+			<label for="message">Message:</label>
+			<textarea id="message" name="message" required></textarea>
 
-			<button type="submit" id="submit-btn">Submit</button>
+			<button type="submit">Submit</button>
 		</form>
+	</section>
 
-		<section id="input-results"></section>
-	</main>
+	<footer>
+		<p>&copy; 2023 Contact Us</p>
+	</footer>
 
-	<script src="tester.js"></script>
+	<script src="script.js"></script>
 </body>
 </html>
